@@ -6,7 +6,7 @@
 # to completely wipe a disk, get the device file (for example  /dev/sda)
 sudo fdisk -l
 
-# DELETE DATA
+# DELETE DATA # # # #
 # securely purge all data: (Assuming /dev/sda is the device to reformat).
 # DO NOT MIX UP "if" AND "of" parameters. dd is dangerous.
 sudo dd if=/dev/zero of=/dev/sda
@@ -15,8 +15,7 @@ sudo dd if=/dev/zero of=/dev/sda
 sudo fdisk /dev/sda
 # After starting the fdisk utility: run the "d" command to delete partitions
 
-
-# CREATE NEW PARTITION
+# CREATE NEW PARTITION # # # #
 sudo fdisk /dev/sda
 # After starting the fdisk utility: run the "g" command to create a gpt partition table.
 # Run the "n" command to add a new partion.
